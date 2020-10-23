@@ -55,7 +55,8 @@ body {
     line-height: 22px;
 }
 .input-group {
-    width: 237px;
+    max-width: 237px;
+    width: 60%;
     height: 32px;
     position: relative;
     background: #ffffff;
@@ -84,13 +85,14 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .search-input::-moz-placeholder { color: #bfbfbf; }
 .search-input::-webkit-input-placeholder { color: #bfbfbf; }
 .search-input:-ms-input-placeholder { color: #bfbfbf; }
 .search-input::-ms-input-placeholder { color: #bfbfbf; }
 .search-input::placeholder { color: #bfbfbf; } 
-
+.menu-toggle {
+    display: none;
+}
 .content {
     max-width: 1200px;
     width: 90%;
@@ -100,7 +102,7 @@ body {
     justify-content: space-between;
 }
 .posts {
-    max-width: 67%;
+    width: 67%;
 }
 .post {
     background: #ffffff;
@@ -330,4 +332,76 @@ body {
     line-height: 20px;
     text-align: center;
     color: #ffffff;    
+}
+@media (max-width: 990px){
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        margin-left: 12px;
+    }
+    .menu-toggle span {
+        height: 2px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .header {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+    .content {
+        margin-top: 94px;
+        margin-bottom: 60px;
+    }
+    .sidebar {
+        position: fixed;
+        z-index: 101;
+        top: 64px;
+        right: 0;
+        bottom: 0;
+        height: calc(100% - 64px);
+        max-width: 320px;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+        padding: 30px;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        overflow-y: auto;
+    }
+    .sidebar.visible {
+        transform: translateX(0);
+    }
+    .posts {
+        width: 100%;
+    }
+    .header-nav {
+        display: none;
+    }
+    .header-menu {
+        width: 90%;
+        margin: auto;
+    }    
+}
+@media (max-width: 576px) {
+    .post-footer {
+        flex-direction: column;
+    } 
+    .post-author {
+        margin-top: 15px;
+    }
+    .author-avatar {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .author-about {
+        order: 2;
+        text-align: left;
+    }
 }
