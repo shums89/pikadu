@@ -1,6 +1,5 @@
 # pikadu
-Учебный проект [Glo Academy](https://glo.academy/) на 4х-дневном интенсиве по верстке ["Свой Pikabu"](https://glo.academy/intensive/pikadu/).
-Проект доступен по [ссылке](https://shums89.github.io/pikadu).
+### Учебный проект [Glo Academy](https://glo.academy/) на 4х-дневном интенсиве по верстке ["Свой Pikabu"](https://glo.academy/intensive/pikadu/). Проект доступен по [ссылке](https://shums89.github.io/pikadu).
 
 ДЕНЬ 1. "Создание каркаса сайта".
 Ознакомимся с дизайн-макетом в Figma.
