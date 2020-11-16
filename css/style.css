@@ -257,6 +257,8 @@ body {
     background-color: #fafafa;
     border: 1px solid #e8e8e8;
     padding: 15px 25px;
+}
+.user-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -265,10 +267,12 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-right: auto;
 }
 .user-avatar {
     border-radius: 50%;
     margin-right: 17px;
+    object-fit: cover;
 }
 .user-name {
     font-family: "SFProDisplay-Semibold", sans-serif;
@@ -276,6 +280,49 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #595959;
+}
+.edit {
+    margin-right: 10px;
+}
+.edit-container {
+    display: none;
+}
+.edit-container.visible {
+    display: block;
+}
+.edit-title {
+    text-align: center;    
+    margin: 10px;
+    margin-top: 25px;
+    font-style: 16px;
+    font-weight: 600;
+    color: #595959;
+}
+.edit-label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.edit-input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px 10px;
+}
+.edit-btn {
+    background-color: #fa8c16;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 32px;
+    font-style: 12px;
+    margin-bottom: 15px;
+}
+.icon-edit {
+    width: 20px;
+    height: 20px;
 }
 .icon-exit {
     width: 20px;
